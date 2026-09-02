@@ -35,11 +35,11 @@ function PlanCard({ plan, ctaLabel }: { plan: Plan; ctaLabel: string }) {
         {plan.services} servicios / mes
       </p>
 
-      <div className="mt-6 flex items-baseline gap-1">
-        <span className="font-display text-5xl font-bold text-veloz-dark lg:text-6xl">
+      <div className="mt-6 flex flex-wrap items-baseline gap-x-1.5 gap-y-0">
+        <span className="font-display text-4xl font-bold leading-none tracking-tight text-veloz-dark sm:text-5xl">
           {formatPlanPrice(plan)}
         </span>
-        <span className="text-sm text-veloz-text">/ mes</span>
+        <span className="whitespace-nowrap text-sm text-veloz-text">/ mes</span>
       </div>
 
       <div className="mt-auto pt-8">
