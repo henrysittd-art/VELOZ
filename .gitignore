@@ -32,6 +32,13 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
+
+# local data (leads.json escrito por el adaptador JSON de lib/db.ts)
+/data/
+
+# Claude Code local state
+.claude/
 
 # vercel
 .vercel
